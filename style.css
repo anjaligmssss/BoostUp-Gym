@@ -228,10 +228,11 @@ ul li a:hover {
 }
 
 .ourProgram .crd:hover {
-     box-shadow: 0 0.4vh 1vh rgb(4,180,4,0.7);
+    box-shadow: 0 0.4vh 1vh rgb(4,180,4,0.7);
     cursor: pointer;
     transform: scale(1.03);
     box-shadow: 0 0.4vh 1vh rgb(4,180,4,0.7);
+    width: 25%;
 }
 
 
@@ -321,6 +322,7 @@ ul li a:hover {
 
 .blogCard:hover{
     box-shadow: 0 0.4vh 1vh rgb(4,180,4,0.7);
+      width: 25%;
 }
 
 .blogCard img {
