@@ -1,0 +1,520 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(1,1,14);
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* NAVIGATION */
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(1,1,14);
+    padding: 2vh 3vw;
+    box-shadow: 0 0.4vh 1vh rgba(255,255,255,0.1);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1rem;
+    color: rgb(4,180,4);
+    margin-left: 1vw;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    margin-right: 2vw;
+    display: block;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav ul li a {
+    margin: 0 1.5vw;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+ul li button {
+    width: 8rem;
+    height: 2.5rem;
+    background-color: rgb(4,180,4);
+    border: none;
+    border-radius: 0.5vh;
+    color: white;
+    font-size: 1rem;
+    margin-left: 1vw;
+}
+
+ul li button:hover {
+    border: 0.2rem solid white;
+    background-color: transparent;
+    color: rgb(4,180,4);
+}
+
+ul li a:hover {
+    color: rgb(4,180,4);
+    border-bottom: 0.2rem solid rgb(4,180,4);
+}
+
+.menuIcon{
+    display : none;
+}
+
+.menuIcon i{
+    font-size: x-large;
+}
+
+
+.menuList {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background-color: black;
+        width: 100%;
+        z-index: 999;
+    }
+
+    .menuIcon {
+        display: block;
+    }
+
+    .menuList {
+        max-height: 0;
+        overflow: hidden;
+        flex-direction: column;
+        transition: max-height 0.5s ease;
+    }
+
+    .menuList.show {
+        max-height: 500px;
+    }
+}
+
+
+
+/* HOME */
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 12vh;
+    width: 100%;
+}
+
+.home .home-txt {
+    max-width: 40vw;
+    padding: 2vh 2vw;
+}
+
+.home-txt h1 {
+    font-size: 5vh;
+    color: rgb(4,180,4);
+}
+
+.home-txt h3 {
+    font-size: 2rem;
+    margin-top: 2vh;
+}
+
+.home-txt p {
+    margin-top: 2vh;
+    color: silver;
+    font-size: 1rem;
+}
+
+.home-txt button {
+    margin-top: 2vh;
+    font-size: 1rem;
+    width: 10rem;
+    height: 3rem;
+    background-color: rgb(4,180,4);
+    color: white;
+    border: none;
+    border-radius: 0.5vh;
+}
+
+.home-txt button:hover {
+    border: 0.2rem solid white;
+    background-color: transparent;
+    color: rgb(4,180,4);
+}
+
+.home img {
+    width: 50vw;
+    max-width: 90vw;
+    height: auto;
+    margin-top: 2vh;
+}
+
+@media (max-width: 600px) {
+  .home {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .home .home-txt {
+    max-width: 90vw;
+  }
+
+  .home img {
+    width: 90vw;
+    order: 2; 
+    margin-top: 2vh;
+  }
+}
+
+
+/* HEADINGS */
+
+.head {
+    text-align: center;
+    padding: 8vh 0 4vh;
+}
+
+.head span {
+    color: rgb(4,180,4);
+    font-weight: bold;
+}
+
+/* PROGRAMS */
+
+.ourProgram {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2vw;
+    padding: 2vh 2vw;
+}
+
+.ourProgram .crd {
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.ourProgram .crd img {
+    border-radius: 10px;
+    width: 16rem;
+    height: 17rem;
+    object-fit: cover;
+}
+
+.ourProgram .crd:hover {
+     box-shadow: 0 0.4vh 1vh rgb(4,180,4,0.7);
+    cursor: pointer;
+    transform: scale(1.03);
+    box-shadow: 0 0.4vh 1vh rgb(4,180,4,0.7);
+}
+
+
+/* PLANS */
+
+.ourPlan {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2vw;
+    padding: 2vh 2vw;
+}
+
+.ourPlan .card {
+    border-radius: 10px;
+    width: 18rem;
+    min-height: 30rem;
+    background-color: rgb(36,35,35);
+    text-align: center;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.card i {
+    font-size: 2rem;
+    color: orange;
+}
+
+.card h3 {
+    margin-top: 1.5vh;
+    color: rgb(6,218,6);
+    font-size: 1.2rem;
+}
+
+.card h1 {
+    margin-top: 1vh;
+    color: rgb(4,180,4);
+    font-size: 1.4rem;
+}
+
+.card p {
+    margin-top: 1vh;
+    color: silver;
+    font-size: 1rem;
+}
+
+.card button {
+    margin-top: 2vh;
+    width: 10rem;
+    height: 2.5rem;
+    background-color: orange;
+    border: none;
+    border-radius: 0.5vh;
+    color: white;
+    font-size: 1rem;
+}
+
+.card:hover {
+    background-color: black;
+    cursor: pointer;
+    transform: scale(1.03);
+    box-shadow: 0 0.4vh 1vh rgb(4,180,4,0.7);
+}
+
+.card button:hover {
+    border: 0.2rem solid white;
+    background-color: transparent;
+    color: rgb(6,218,6);
+}
+
+/* BLOGS */
+
+.ourBlog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2vw;
+    padding: 2vh 2vw;
+}
+
+.blogCard {
+    border-radius: 10px;
+    width: 18rem;
+    background-color: rgb(16, 16, 16);
+    overflow: hidden;
+}
+
+.blogCard:hover{
+    box-shadow: 0 0.4vh 1vh rgb(4,180,4,0.7);
+}
+
+.blogCard img {
+     border-radius: 10px;
+    width: 100%;
+    height: 16rem;
+    object-fit: cover;
+}
+
+.blogText {
+    padding: 1rem;
+}
+
+.blogText h3 {
+    font-size: 1.2rem;
+}
+
+.blogText p {
+    margin-top: 1vh;
+    font-size: 0.9rem;
+}
+
+.blogText a {
+    display: inline-block;
+    margin-top: 1vh;
+    padding: 0.5rem 1rem;
+    background-color: rgb(6,218,6);
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.blogCard:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+    box-shadow: 0 0.4vh 1vh rgb(4,180,4,0.7);
+}
+
+/* CONTACT */
+
+.contactPage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh 2vw;
+}
+
+.contact-text {
+    color: silver;
+    font-size: 2rem;
+    text-align: center;
+    margin: 2vh 2vw;
+}
+
+.contactPage img {
+    width: 60vw;
+    max-width: 90vw;
+    height: auto;
+    border-radius: 1vh;
+    box-shadow: 0 0.4vh 1vh rgba(6,218,6,0.7);
+}
+
+.contact-us {
+    text-align: center;
+    padding: 4vh 2vw;
+}
+
+.contact-us input {
+    padding: 1rem;
+    width: 90vw;
+    max-width: 25rem;
+    font-size: 1rem;
+    margin: 1vh 0;
+    border: none;
+    border-radius: 0.5vh;
+}
+
+.contact-us button {
+    width: 90vw;
+    max-width: 25rem;
+    height: 3rem;
+    background-color: rgb(6,218,6);
+    color: white;
+    border: none;
+    font-size: 1rem;
+    margin-top: 2vh;
+    border-radius: 0.5vh;
+}
+
+.contact-us button:hover {
+    border: 0.2rem solid white;
+    background-color: transparent;
+    color: rgb(6,218,6);
+}
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 4vh 2vw;
+    box-shadow: 0 0.4vh 1vh rgba(255,255,255,0.1);
+}
+
+.footer-text {
+    margin: 2vh 2vw;
+    min-width: 10rem;
+}
+
+.footer-text h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1vh;
+}
+
+.footer-text p {
+    font-size: 1rem;
+    color: silver;
+    margin-top: 0.5vh;
+}
+
+/* NEW: SOCIAL ICONS & CREDIT */
+
+.footer-extra {
+    width: 100%;
+    text-align: center;
+    margin-top: 3vh;
+    padding-top: 2vh;
+    border-top: 0.1rem solid rgba(255,255,255,0.2);
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 1vw;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: rgb(4,180,4);
+}
+
+.credit {
+    color: silver;
+    font-size: 1rem;
+    margin-top: 1vh;
+}
+
+.credit a {
+    color: rgb(4,180,4);
+    text-decoration: none;
+}
+
+.credit a:hover {
+    text-decoration: underline;
+}
+
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Hidden state */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+/* When visible */
+.animate-left.visible {
+  animation: slideInLeft 1s ease-out forwards;
+}
+
+.animate-right.visible {
+  animation: slideInRight 1s ease-out forwards;
+}

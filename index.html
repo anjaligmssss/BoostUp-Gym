@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <h1>BoostUp</h1>
+            </div>
+            <ul class="menuList">
+                <li>
+                    <a href="#home" id="homes" onclick="home()">Home</a>
+                    <a href="#program" id="programs" onclick="program()">Program</a>
+                    <a href="#plan" id="plans" onclick="plan()">Plan</a>
+                    <a href="#blog" id="blogs" onclick="blog()">Blog</a>
+                    <a href="#contact" id="contacts" onclick="contact()">Contact</a>
+                    <button>Join Now</button>
+                </li>
+            </ul>
+
+            <div class="menuIcon">
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+            </div>
+        </nav>
+
+        <!--- main -->
+        <div class="home" id="home">
+            <div class="home-txt">
+                <h1>Commit To Be Fit</h1>
+                <h3>Empowering Kurukshetra to be healthier, stronger, and unstoppable.</h3>
+                <p>At BoostUp Gym, we believe fitness is not just a routine — it's a
+          lifestyle.  </p>
+                <button>Join Now</button>
+            </div>
+            <img src="./images/heroimg.jpg">
+        </div>
+
+        <!-- program -->
+         <div class="program" id="program">
+            <div class="head">
+                <h1>Our <span>Programs</span></h1>
+            </div>
+            <div class="ourProgram">
+                 <div class="crd animate-on-scroll animate-left">
+                    <img src="./images/program1.jpg">
+                    <h3>Dance</h3>
+                 </div>
+                 <div class="crd animate-on-scroll animate-left">
+                    <img src="./images/program3.jpg">
+                    <h3>Cardio</h3>
+                 </div>
+                 <div class="crd animate-on-scroll animate-left">
+                    <img src="./images/program2.jpg">
+                    <h3>Heavy Weight</h3>
+                 </div>
+            </div>
+         </div>
+
+         <!-- paln -->
+          <div class="plan" id="plan">
+            <div class="head ">
+                <h1>Our <span>Plans</span></h1>
+            </div>
+            <div class="ourPlan">
+                <div class="card">
+                    <i class="fa-solid fa-bookmark"></i>
+                    <h3>Basic Package</h3>
+                    <h1>30 Day in $10</h1>
+                    <p>No Personal Trainer</p>
+                    <p>Valid for 30 days.</p>
+                    <p>30 Day in $10</p>
+                    <p>No Personal Trainer</p>
+                    <button>Buy Plan</button>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-money-bill"></i>
+                    <h3>Premium Package</h3>
+                    <h1>30 Day in $10</h1>
+                    <p>No Personal Trainer</p>
+                    <p>Valid for 30 days.</p>
+                    <p>30 Day in $10</p>
+                    <p>No Personal Trainer</p>
+                    <button>Buy Plan</button>
+                </div>
+                <div class="card">
+                   <i class="fa-solid fa-diamond"></i>
+                    <h3>Diamond Package</h3>
+                    <h1>30 Day in $10</h1>
+                    <p>No Personal Trainer</p>
+                    <p>Valid for 30 days.</p>
+                    <p>30 Day in $10</p>
+                    <p>No Personal Trainer</p>
+                    <button>Buy Plan</button>
+                </div>
+            </div>
+          </div>
+
+          <!-- Blog -->
+           <div class="blog" id="blog">
+            <div class="head ">
+                <h1>Our <span>Blogs</span></h1>
+            </div>
+            <div class="ourBlog ">
+            <div class="blogCard animate-on-scroll animate-left">
+                <img src="./images/blog1.jpg">
+                <div class="blogText">
+                    <h3>Workout</h3>
+                    <p>Tips and tricks to keep your motivation high and consistent.</p>
+                    <a  href="http://pancakesandpushups.com/blog/" target="_blank">Read More</a>
+                </div>
+            </div>
+            <div class="blogCard animate-on-scroll animate-left">
+                <img src="./images/blog2.jpg">
+                <div class="blogText">
+                    <h3>Healthy Diet</h3>
+                    <p>Learn what to eat before and after workouts to maximize results.</p>
+                    <a  href="http://pancakesandpushups.com/blog/" target="_blank">Read More</a>
+                </div>
+            </div>
+            <div class="blogCard animate-on-scroll animate-left">
+                <img src="./images/blog3.jpg">
+                <div class="blogText">
+                    <h3>5 Daily Habits</h3>
+                    <p>Discover simple lifestyle changes to boost your energy </p>
+                    <a  href="http://pancakesandpushups.com/blog/" target="_blank">Read More</a>
+                </div>
+            </div>
+            </div>
+           </div>
+
+           <!--  Contact us-->
+             <div class="contact" id="contact">
+                <div class="head animate-left">
+                    <h1>Let's <span>Begin...</span></h1>
+                    <h2>Contact <span>US</span></h2>
+                </div>
+                <div class="contactPage ">
+                    <div class="contact-text ">
+                        <h1>Let's Go...</h1>
+                        <h2>Ready to Transform?</h2>
+                    </div>
+                    <img src="./images/gymcontact.avif"  class="animate-on-scroll animate-left">
+                </div>
+
+                <div class="contact-us">
+                    <h1>Contact Us</h1>
+                    <input type ="text" placeholder="Enter your name" value="" id="name"><br>
+                    <input type ="text" placeholder="Enter your number" value="" id="number"><br>
+                    <button onclick="submit()">Submit</button>
+                </div>
+             </div>
+
+             <!-- Footer -->
+              <div class="footer">
+                <div class="footer-text">
+                    <h2>About Us</h2>
+                    <p>BoostUp Gym  is dedicated to helping you achieve your
+          fitness goals with expert trainers, modern equipment, and a
+          supportive community.</p>
+                    
+                </div>
+                 <div class="footer-text">
+                    <h2>Plans</h2>
+                    <p>Basic Package</p>
+                    <p>Diamond Package</p>
+                    <p>Premium Package</p>
+                    <p>Custom Plans</p>
+                </div>
+                 <div class="footer-text">
+                    <h2>Contact</h2>
+                    <p>Membership</p>
+                    <p>Trainer Assistance</p>
+                    <p>Premium Plan</p>
+                    <p>Join Now</p>
+                </div>
+                 <div class="footer-text">
+                    <h2>Program</h2>
+                    <p>Dance</p>
+                    <p>Cardio</p>
+                    <p>Heavy Weight</p>
+                    <p>Fun More</p>
+                </div>
+            
+              </div>
+              <div class="footer-extra">
+                <div class="social-icons">
+                    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank" aria-label="Twitter / X">
+                     <i class="fab fa-x-twitter"></i>
+                    </a>
+                </div>
+                <p class="credit">Made by <a href="https://www.aumtech.solutions" target="_blank">Aumtech Solution</a></p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
